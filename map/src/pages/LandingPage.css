@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background: linear-gradient(180deg, #F6DBC0 0%, #F5D3B2 100%) no-repeat fixed;
+    background-image: url("./images/bg.svg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 5%;
+    min-height: 200vh;
+    overflow-x: hidden;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    pointer-events: none; /* Allow clicks to pass through if needed */
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    z-index: 2;
+    gap: 6rem;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#logo span {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.7rem;
+    color: #441f05;
+}
+
+#logo img {
+    height: 2.6rem;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+#links li {
+    list-style: none; /* Remove default list styles */
+    color: white;
+    text-decoration: none;
+}
+
+#links {
+    display: flex;
+    align-items: center;
+    gap: 2.3rem;
+}
+
+.sticky-navbar {
+    position: fixed;
+    top: 2rem;
+    width: 90%;
+}
+
+.sticky-logo {
+    color: white !important;
+}
+
+#main-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+#main-section img {
+    height: 28rem;
+}
+
+#truck {
+    position: relative;
+}
+
+#secondary-section {
+    margin-top: 20rem;
+    display: flex;
+    justify-content: center;
+    color: white;
+    gap: 3rem;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 2.5rem;
+    width: 35%;
+}
+
+#info h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+}
+
+#info span {
+    color: #C5A98A;
+}
+
+#steps {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 1.2rem;
+}
+
+#steps h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    text-align: center;
+}
+
+#steps img {
+    height: 8rem;
+}
+
+#steps div {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+
+.btn {
+    border-radius: 25px;
+    background-color: #F9B45F;
+    color: white;
+    width: 12rem;
+    padding: 12px 24px;
+    text-align: center;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #f9c17c;
+}
+
+#links .btn {
+    width: 9rem;
+    padding: 8px 16px;
+    font-size: 1rem;
+}
